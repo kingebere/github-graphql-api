@@ -1,0 +1,154 @@
+
+@font-face {
+  font-family: 'Inter-B';
+  font-style: bold;
+  src: url('../assets/fonts/Inter-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter-R';
+  font-style:normal;
+  src: url('../assets/fonts/Inter-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter-S';
+  font-style:bold;
+  src: url('../assets/fonts/Inter-ExtraBold.woff') format('woff');
+}
+.site-wrapper{
+    overflow:hidden;
+}
+
+input[type=text] {
+    font-size:15px;
+    font-family:"Inter-R";
+    color: hsl(0deg 0% 7% / 100%);
+    display: inline-flex;
+    background:white;
+    cursor:text;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    padding: 4px 10px;
+    border: none;
+    outline:none;
+    width: 100%;
+}
+input[type=text]:focus{
+  border:none;
+  outline:none;
+}
+::placeholder{
+    color:hsl(0deg 0% 0%/30%);
+    font-family:"Inter-R";
+    font-size:16px;
+    
+}
+.button{
+  
+    font-size:14px;
+    padding:0 12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:50px;
+    color:white;
+    background: hsl(219, 98%, 49%);
+    border: 1px solid hsl(219, 98%, 49%);
+    box-shadow: 0 1px 2px rgb(15 15 15 / 10%);
+    margin-left:10px;
+    border-radius:8px;
+    font-family:"Inter-B";
+    cursor:pointer;
+    transition: all 300ms ease-out
+
+}
+.button:hover{
+  background:rgb(3, 27, 73)
+}
+.form_wrapper{
+    background:white;
+    
+    padding:10px 8px;
+    border: 1px solid #e8ecf1;
+    border-radius: 8px;
+
+
+}
+.repo_bottom{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    display:flex;
+    height:102px;
+    justify-content: space-around;
+    align-items:center;
+    box-shadow: 0 -1px 10px rgb(68 89 109 / 10%);
+    background:hsl(0deg 0% 100% / 100%);
+    
+}
+.button-load{
+ border-radius: 54px;
+    padding: 0 22px;
+    align-items: center;
+    justify-content: center;
+    background: #eef4fa;
+    border: 1px solid #eef4fa;
+    color: #1c85e8;
+    cursor: pointer;
+    height: 52px;
+    outline: none;
+    margin-right:15px;
+    font-family:"Inter-B";
+}
+
+.mobile-text-16px{
+font-size:16px;
+font-family:"Inter-R"
+}
+.mobile-text-14px{
+  font-size:14px;
+font-family:"Inter-R"
+}
+.mobile-text-12px{
+  font-size:12px;
+font-family:"Inter-R"
+}
+.icon_wrapper{
+height:16px;
+width:16px;
+}
+.border{
+  border-top: 1px solid #ded8d8;
+} 
+.padding-24px{
+  padding-top:24px;
+  padding-bottom:24px;
+}
+.list-text-16px{
+  font-size:16px;
+font-family:"Inter-B";
+  color: hsl(209deg, 90%, 50%) !important; 
+
+}
+.list-text-14px{
+  font-size:14px;
+font-family:"Inter-R";
+color: hsl(223deg 40% 21%);
+
+}
+.list-text-12px{
+  font-size:12px;
+font-family:"Inter-R";
+color: hsl(210deg ,15%, 57%);
+border-radius:23px;
+padding:4px;
+
+}
+.list-text-122px{
+  font-size:12px;
+font-family:"Inter-R";
+color: hsl(210deg ,15%, 57%);
+border-radius:23px;
+
+
+}
