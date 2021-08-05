@@ -12,7 +12,7 @@ const UserSearch:FunctionComponent<{}> = () => {
           
     const [searchuserquery,{data}] = useLazyQuery<Query>(GET_USERS)
 
-          console.log(data)
+          
     const onSubmit =( e: React.FormEvent<HTMLFormElement> )=> {
     e.preventDefault();
     
@@ -54,20 +54,7 @@ const UserSearch:FunctionComponent<{}> = () => {
        
          
   
-              {/* {  data.search.edges?.map((ships)=>
  
-    { if (ships?.node?.__typename === 'User'){
-                     (
-                       <>
-               
-                     <Userslist key={ships?.node?.id} ships={ships?.node} />
-              </>)
-                     
-                }else{
-                    <div>nothing</div>
-                }
- }
-        )} */}
         {
           <Userslist ships= {data.search}/>
         }

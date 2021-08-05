@@ -21,7 +21,7 @@ const mocks = [
       hasPreviousPage:"8",
       endCursor:"9",
       startCursor:"9",
-    }
+    },
     edges: {
       node: {
          User :{
@@ -37,7 +37,7 @@ const mocks = [
           location:"dcdc",  
         }
       }
-    }
+    },
     repositoryCount:"5",
         
         }
