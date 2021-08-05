@@ -1,5 +1,5 @@
-import JobsWrapper from "./pages/JobsWrapper";
-import UserSearch from "./pages/UserSearch";
+import JobsWrapper from "./containers/Repository/JobsWrapper";
+import UserSearch from "./containers/Users/UserSearch";
 
 import './App.css';
 import './index.css';

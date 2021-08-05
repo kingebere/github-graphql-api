@@ -1,9 +1,9 @@
 import React , {FunctionComponent,useState}from "react";
-import './JobsWrapper.css';
+import '../JobsWrapper.css';
 import {useLazyQuery} from "@apollo/client"
-import Jobslist from "../components/joblist"
-import  {GET_JOBLIST} from "../getjobs"
-import{Query} from "../Generated/graphql"
+import Jobslist from "../../components/joblist"
+import  {GET_JOBLIST} from "../../getjobs"
+import{Query} from "../../Generated/graphql"
 
 
 
