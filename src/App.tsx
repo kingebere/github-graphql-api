@@ -13,12 +13,14 @@ function App() {
         uri: 'https://api.github.com/graphql',
 
         headers: {
-            Authorization: 'bearer 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',
+            Authorization: `bearer ${process.env.REACT_APP_GITHUB_TOKEN}`,
         },
         cache: new InMemoryCache(),
     });
+console.log(`${process.env.REACT_APP_GITHUB_TOKEN}`)
 
     return (
+        
         <Router>
             <ApolloProvider client={client}>
                 <div className="site-wrapper">

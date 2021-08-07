@@ -9,7 +9,7 @@ const UserSearch: FunctionComponent<{}> = () => {
     const [query, setquery] = useState<String>('');
 
     const [searchuserquery, { data }] = useLazyQuery<Query>(GET_USERS);
-    console.log(data);
+   
     useEffect(()=>{},[])
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();

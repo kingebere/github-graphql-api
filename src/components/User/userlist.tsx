@@ -41,7 +41,10 @@ const Userslist: React.FC<Props> = ({ ships, game }: Props) => {
                         if (ships?.node?.__typename === 'User') {
                             //Link to User's profile on github
                             return (
-                                <div className="flex1 gap-10px align-items-start border  padding-24px">
+                                <div
+                                    className="flex1 gap-10px align-items-start border  padding-24px"
+                                    key={ships?.node?.id}
+                                >
                                     <div className="icon_wrapper ">
                                         <img
                                             src={ships?.node?.avatarUrl}

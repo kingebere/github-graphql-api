@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState,useEffect } from 'react';
+import React, { FunctionComponent, useState, useEffect } from 'react';
 import '../JobsWrapper.css';
 import { useLazyQuery } from '@apollo/client';
 import Jobslist from '../../components/Repository/joblist';
@@ -9,15 +9,12 @@ const JobsWrapper: FunctionComponent<{}> = () => {
     const [query, setquery] = useState<string>('');
 
     const [searchquery, { data }] = useLazyQuery<Query>(GET_JOBLIST);
-    useEffect(()=>{},[])
+    useEffect(() => {}, []);
 
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         searchquery({ variables: { query: query } });
-
-        console.log(query);
-        console.log(data);
     };
 
     // passing data to the component Jobslist

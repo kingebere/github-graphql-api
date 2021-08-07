@@ -36,7 +36,10 @@ const Jobslist: React.FC<Props2> = ({ names, game }: Props2) => {
                 {names.edges?.map((ships?) => {
                     if (ships?.node?.__typename === 'Repository') {
                         return (
-                            <div className="flex1 gap-10px align-items-start border  padding-24px ">
+                            <div
+                                className="flex1 gap-10px align-items-start border  padding-24px "
+                                key={ships?.node?.id}
+                            >
                                 <div className="icon_wrapper ">
                                     <svg
                                         aria-hidden="true"
